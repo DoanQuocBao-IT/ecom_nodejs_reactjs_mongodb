@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
 const Product = ({product}) => {
+    const [state,setState]=useState([])
+    
   return (
     <Card className='my-3 p-3 rounded'>
         <a href={`/product/${product._id}`}>
